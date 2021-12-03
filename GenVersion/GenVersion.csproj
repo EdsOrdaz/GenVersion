@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA0197AE-E340-405D-9688-AAB164001E13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GenVersion</RootNamespace>
+    <AssemblyName>GenVersion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono_principal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asignar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asignar.Designer.cs">
+      <DependentUpon>Asignar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASiTTi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASiTTi.Designer.cs">
+      <DependentUpon>ASiTTi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesquemarSiTTi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesquemarSiTTi.Designer.cs">
+      <DependentUpon>DesquemarSiTTi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetName.Designer.cs">
+      <DependentUpon>GetName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impresoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impresoras.Designer.cs">
+      <DependentUpon>Impresoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfEq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfEq.Designer.cs">
+      <DependentUpon>InfEq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resguardos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resguardos.Designer.cs">
+      <DependentUpon>Resguardos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServMail.Designer.cs">
+      <DependentUpon>ServMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerEconomico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerEconomico.Designer.cs">
+      <DependentUpon>VerEconomico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Asignar.resx">
+      <DependentUpon>Asignar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASiTTi.resx">
+      <DependentUpon>ASiTTi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesquemarSiTTi.resx">
+      <DependentUpon>DesquemarSiTTi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetName.resx">
+      <DependentUpon>GetName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impresoras.resx">
+      <DependentUpon>Impresoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfEq.resx">
+      <DependentUpon>InfEq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resguardos.resx">
+      <DependentUpon>Resguardos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServMail.resx">
+      <DependentUpon>ServMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerEconomico.resx">
+      <DependentUpon>VerEconomico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icono_principal.ico" />
+    <None Include="Resources\infeq.png" />
+    <None Include="Resources\ServMail.png" />
+    <None Include="Resources\GetName.png" />
+    <None Include="Resources\DesquemarSiTTi.png" />
+    <Content Include="update %281%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
