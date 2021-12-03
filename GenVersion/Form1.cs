@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace GenVersion
 {
+    //v0.1
     public partial class Form1 : Form
     {
         public static String conexionsqllast = "server=148.223.153.37,5314; database=InfEq;User ID=eordazs;Password=Corpame*2013; integrated security = false ; MultipleActiveResultSets=True";
