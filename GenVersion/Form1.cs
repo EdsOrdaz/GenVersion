@@ -21,6 +21,19 @@ namespace GenVersion
             InitializeComponent();
         }
 
+        public static string GetSHA1(String texto)
+        {
+            SHA1 sha1 = SHA1CryptoServiceProvider.Create();
+            Byte[] textOriginal = ASCIIEncoding.Default.GetBytes(texto);
+            Byte[] hash = sha1.ComputeHash(textOriginal);
+            StringBuilder cadena = new StringBuilder();
+            foreach (byte i in hash)
+            {
+                cadena.AppendFormat("{0:x2}", i);
+            }
+            return cadena.ToString();
+        }
+
         public static string GetMd5Hash(MD5 md5Hash, string input)
         {
 
@@ -37,9 +50,9 @@ namespace GenVersion
             {
                 sBuilder.Append(data[i].ToString("x2"));
             }
-
+            String text = GetSHA1(sBuilder.ToString());
             // Return the hexadecimal string.
-            return sBuilder.ToString();
+            return text;
         }
 
         // Verify a hash against a string.
@@ -124,6 +137,18 @@ namespace GenVersion
         {
             Impresoras impresoras = new Impresoras();
             impresoras.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ConfEq confeq = new ConfEq();  
+            confeq.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            VerRequisiciones ver_requisiciones = new VerRequisiciones();
+            ver_requisiciones.ShowDialog();
         }
     }
 }

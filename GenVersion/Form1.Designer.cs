@@ -39,12 +39,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button8
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(187, 101);
+            this.button8.Location = new System.Drawing.Point(277, 99);
             this.button8.Margin = new System.Windows.Forms.Padding(1);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(77, 78);
@@ -55,7 +57,7 @@
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(10, 101);
+            this.button7.Location = new System.Drawing.Point(98, 99);
             this.button7.Margin = new System.Windows.Forms.Padding(1);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(77, 78);
@@ -66,7 +68,7 @@
             // button6
             // 
             this.button6.Image = global::GenVersion.Properties.Resources.DesquemarSiTTi;
-            this.button6.Location = new System.Drawing.Point(98, 101);
+            this.button6.Location = new System.Drawing.Point(188, 99);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(77, 78);
@@ -88,7 +90,7 @@
             // button4
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(365, 10);
+            this.button4.Location = new System.Drawing.Point(10, 99);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(77, 78);
@@ -99,7 +101,7 @@
             // button3
             // 
             this.button3.Image = global::GenVersion.Properties.Resources.infeq;
-            this.button3.Location = new System.Drawing.Point(276, 10);
+            this.button3.Location = new System.Drawing.Point(277, 10);
             this.button3.Margin = new System.Windows.Forms.Padding(1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 78);
@@ -132,7 +134,7 @@
             // button9
             // 
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(276, 101);
+            this.button9.Location = new System.Drawing.Point(10, 190);
             this.button9.Margin = new System.Windows.Forms.Padding(1);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(77, 78);
@@ -143,7 +145,7 @@
             // button10
             // 
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(365, 101);
+            this.button10.Location = new System.Drawing.Point(98, 190);
             this.button10.Margin = new System.Windows.Forms.Padding(1);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(77, 78);
@@ -151,11 +153,35 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button11
+            // 
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.Location = new System.Drawing.Point(188, 190);
+            this.button11.Margin = new System.Windows.Forms.Padding(1);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(77, 78);
+            this.button11.TabIndex = 11;
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
+            this.button12.Location = new System.Drawing.Point(277, 190);
+            this.button12.Margin = new System.Windows.Forms.Padding(1);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(77, 78);
+            this.button12.TabIndex = 12;
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 188);
+            this.ClientSize = new System.Drawing.Size(361, 274);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -189,6 +215,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 
